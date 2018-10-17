@@ -1,0 +1,207 @@
+@import "variables";
+
+.container {
+    display: flex;
+    padding: 0;
+}
+
+.container-row {
+    flex-direction: row;
+}
+
+.container-column {
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: $onyx;
+    overflow: hidden;
+    a {
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+        color: $isabelline;
+        @include Font($body-font, $base-font-size, 6);
+        align-self: center;
+        @include UserSelect(none);
+        &.logo-link {
+            padding: 10px;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: $paynes-grey;
+        }
+        &.active {
+            text-decoration: underline;
+        }
+    }
+
+    #navbar-right {
+        margin-left: auto;
+        align-self: center;
+    }
+}
+
+.body {
+    min-height: 100vh;
+    position: relative;
+
+    .main-body {
+        min-height: 75vh;
+        margin-bottom: 60px;
+        .secondary-body {
+            min-height: inherit;
+        }
+    }
+}
+
+#footer {
+    width: 100%;
+    background-color: $onyx;
+    color: $isabelline;
+    bottom: 0;
+    position: absolute;
+    margin-top: 30px;
+}
+
+#copyright {
+    padding: 1% 0;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.input-field {
+    padding: 5px;
+    margin: 30px 15px;
+}
+
+// .form {
+//     align-items: center;
+//     justify-content: center;
+// }
+
+.greeting {
+    font-size: $base-font-size + 36;
+    margin-top: 20px;
+    @include UserSelect(none);
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+}
+
+.image {
+    flex: 0.66;
+    width: 40vw;
+    height: 100%;
+    margin-right: 10px;
+    margin-bottom: 60px;
+}
+
+.right {
+    margin: 0 auto;
+    flex: 0.33;
+}
+
+.btn {
+    background-color: $silver-lake-blue;
+    color: $isabelline;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    @include UserSelect(none);
+    @include Font($header-font, $base-font-size, 8);
+    box-shadow: 5px 5px 10px $onyx;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.row {
+    flex: 1;
+    margin: 15% 0;
+}
+
+.points {
+    padding-bottom: 60px;
+    .collection {
+        margin: 5px;
+        padding: 5px;
+        .title {
+            font-size: $base-font-size + 16;
+            text-decoration: underline;
+        }
+        
+        .description {
+            margin: 5px;
+            padding: 5px;
+            line-height: 1.5;
+        }
+        overflow: auto;
+    }
+}
+
+.questionBlock {
+    margin: 5px;
+    padding: 5px;
+    .question {
+        font-size: $base-font-size + 16;
+    }
+
+    .answer {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+.profile-container {
+    border-top: 5px solid $onyx;
+    border-radius: 25px;
+    min-height: 100%;
+    .profile-tabs {
+        h1 {
+            flex: 0.33;
+            padding: 15px 50px;
+            border-right: 5px solid $onyx;
+            margin: auto o;
+            margin-bottom: 20px;
+            text-align: center;
+            @include UserSelect(none);
+        }
+    }
+}
+
+.canvas-container {
+    flex: 3;
+
+    #canvas {
+        width: 1024px;
+        height: 576px;
+        padding: 5px;
+        margin: 5px;
+        background: white;
+        border: 1px solid $onyx;
+    }
+}
+
+.vid-text-container {
+    flex: 1;
+
+    .video-feed {
+        background: $silver-lake-blue;
+        border: 5px solid $onyx;
+        width: 512px;
+        height: 288px;
+        margin: 0 5px 5px 0;
+    }
+    .message-container {
+        background: white;
+        border: 5px solid $onyx;
+        width: 512px;
+        height: 380px;
+    }
+}

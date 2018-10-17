@@ -1,0 +1,10 @@
+@mixin Font($family, $size, $sizeIncrease) {
+    font-family: $family;
+    font-size: $size + $sizeIncrease;
+}
+
+@mixin UserSelect($prop) {
+    user-select: $prop;
+    -moz-user-select: $prop;
+    -webkit-user-select: $prop;
+}

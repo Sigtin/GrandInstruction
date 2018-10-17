@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption,
+figure, footer, header, hgroup, menu,
+nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14pt;
+  background-color: #F1F0EA;
+  min-height: 100%;
+}
+
+h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 24pt;
+}
+
+h2 {
+  font-family: "Tangerine", cursive;
+  font-size: 20pt;
+}
+
+h3 {
+  font-family: "Tangerine", cursive;
+  font-size: 18pt;
+}
+
+h4 {
+  font-family: "Tangerine", cursive;
+  font-size: 17pt;
+}
+
+h5 {
+  font-family: "Tangerine", cursive;
+  font-size: 16pt;
+}
+
+h6 {
+  font-family: "Tangerine", cursive;
+  font-size: 15pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 5px;
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  padding: 0;
+}
+
+.container-row {
+  flex-direction: row;
+}
+
+.container-column {
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #39393A;
+  overflow: hidden;
+}
+.navbar a {
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  color: #F1F0EA;
+  font-family: "Raleway", sans-serif;
+  font-size: 20pt;
+  align-self: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.navbar a.logo-link {
+  padding: 10px;
+}
+.navbar a:hover {
+  cursor: pointer;
+  background-color: #5D737E;
+}
+.navbar a.active {
+  text-decoration: underline;
+}
+.navbar #navbar-right {
+  margin-left: auto;
+  align-self: center;
+}
+
+.body {
+  min-height: 100vh;
+  position: relative;
+}
+.body .main-body {
+  min-height: 75vh;
+  margin-bottom: 60px;
+}
+.body .main-body .secondary-body {
+  min-height: inherit;
+}
+
+#footer {
+  width: 100%;
+  background-color: #39393A;
+  color: #F1F0EA;
+  bottom: 0;
+  position: absolute;
+  margin-top: 30px;
+}
+
+#copyright {
+  padding: 1% 0;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.input-field {
+  padding: 5px;
+  margin: 30px 15px;
+}
+
+.greeting {
+  font-size: 50pt;
+  margin-top: 20px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.logo {
+  width: 45px;
+  height: auto;
+}
+
+.image {
+  flex: 0.66;
+  width: 40vw;
+  height: 100%;
+  margin-right: 10px;
+  margin-bottom: 60px;
+}
+
+.right {
+  margin: 0 auto;
+  flex: 0.33;
+}
+
+.btn {
+  background-color: #568DB6;
+  color: #F1F0EA;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  font-family: "Tangerine", cursive;
+  font-size: 22pt;
+  box-shadow: 5px 5px 10px #39393A;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.row {
+  flex: 1;
+  margin: 15% 0;
+}
+
+.points {
+  padding-bottom: 60px;
+}
+.points .collection {
+  margin: 5px;
+  padding: 5px;
+  overflow: auto;
+}
+.points .collection .title {
+  font-size: 30pt;
+  text-decoration: underline;
+}
+.points .collection .description {
+  margin: 5px;
+  padding: 5px;
+  line-height: 1.5;
+}
+
+.questionBlock {
+  margin: 5px;
+  padding: 5px;
+}
+.questionBlock .question {
+  font-size: 30pt;
+}
+.questionBlock .answer {
+  margin: 5px;
+  padding: 5px;
+}
+
+.profile-container {
+  border-top: 5px solid #39393A;
+  border-radius: 25px;
+  min-height: 100%;
+}
+.profile-container .profile-tabs h1 {
+  flex: 0.33;
+  padding: 15px 50px;
+  border-right: 5px solid #39393A;
+  margin: auto o;
+  margin-bottom: 20px;
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.canvas-container {
+  flex: 3;
+}
+.canvas-container #canvas {
+  width: 1024px;
+  height: 576px;
+  padding: 5px;
+  margin: 5px;
+  background: white;
+  border: 1px solid #39393A;
+}
+
+.vid-text-container {
+  flex: 1;
+}
+.vid-text-container .video-feed {
+  background: #568DB6;
+  border: 5px solid #39393A;
+  width: 512px;
+  height: 288px;
+  margin: 0 5px 5px 0;
+}
+.vid-text-container .message-container {
+  background: white;
+  border: 5px solid #39393A;
+  width: 512px;
+  height: 380px;
+}
+
+/*# sourceMappingURL=style.css.map */

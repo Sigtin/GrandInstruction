@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+
+html {
+    height: 100%;
+}
+
+body {
+    @include Font($body-font, $base-font-size, 0);
+    background-color: $isabelline;
+    min-height: 100%;
+}
+
+h1 {
+    @include Font($header-font, $base-font-size, 10);
+}
+h2 {
+    @include Font($header-font, $base-font-size, 6);
+}
+h3 {
+    @include Font($header-font, $base-font-size, 4);
+}
+h4 {
+    @include Font($header-font, $base-font-size, 3);
+}
+h5 {
+    @include Font($header-font, $base-font-size, 2);
+}
+h6 {
+    @include Font($header-font, $base-font-size, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 5px;
+    margin: 5px;
+}
