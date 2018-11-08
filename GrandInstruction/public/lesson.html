@@ -9,7 +9,7 @@
     <link rel="icon" href="http://localhost:8080\Images\favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Raleway:500|Tangerine:700" rel="stylesheet">
     <link href="/Styles/CSS/style.css" rel="stylesheet">
-    <title>Home</title>
+    <title>Lesson</title>
 </head>
 
 <body>
@@ -25,10 +25,12 @@
         <div class="container container-row main-body">
             <div class="container container-column canvas-container">
                 <div class="container container-row">
-                    <div class="btn">Pencil placeholder</div>
-                    <div class="btn">Pen placeholder</div>
-                    <div class="btn">Paintbrush placeholder</div>
-                    <div class="btn">Eraser placeholder</div>
+                    <form>
+                        <input id="pencil-tool" type="radio" name="tool" value="Pencil" checked/> Pencil
+                        <input id="pen-tool" type="radio" name="tool" value="Pen" disabled/> Pen
+                        <input id="paintbrush-tool" type="radio" name="tool" value="Paintbrush" disabled/> Paintbrush
+                        <input id="eraser-tool" type="radio" name="tool" value="Eraser" disabled/> Eraser
+                    </form>
                     <div class="btn">Undo placeholder</div>
                     <div class="btn">Redo placeholder</div>
                 </div>
